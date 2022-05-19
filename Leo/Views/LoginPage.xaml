@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Leo.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     HorizontalOptions="Fill"
+                     VerticalOptions="CenterAndExpand"
+                     Padding="30, 0, 30, 0"
+                     IsVisible="true"
+                     x:Name="SignInTab">
+            <Label Text="UserName"
+                       Margin="5, 0, 0, 0"/>
+            <Entry x:Name="Email_SignIn"
+                       ClearButtonVisibility="WhileEditing"
+                       IsTextPredictionEnabled="True"
+                       TabIndex="0"/>
+            <Label Text="Password"
+                       Margin="5, 10, 0, 0"/>
+            <Entry IsPassword="True"
+                       x:Name="Password_SignIn"/>
+            <Button
+                    Text="Sign In"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    Margin="0, 20, 0, 0"
+                    Padding="0, 0, 0, 0"
+                    FontSize="15"
+                    BackgroundColor="{StaticResource colorPink_Button}"
+                    Clicked="SignInButton_Clicked"/>
+            <Label x:Name="Debug_SignIn"
+                       Margin="0, 20, 0, 0"
+                       Text=""
+                       FontSize="15"
+                       TextColor="black"
+                       FontAttributes="Bold"
+                       Padding="15, 0, 0, 0"/>
+            <Label Text="" FontSize="50"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
