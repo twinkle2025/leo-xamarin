@@ -1,8 +1,11 @@
 ﻿using Leo.Views;
+using Leo.Models.APITemplate;
+using Leo.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
+using System.Threading.Tasks;
 
 namespace Leo.ViewModels
 {
@@ -20,5 +23,10 @@ namespace Leo.ViewModels
             // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
             await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
         }
+
+        //public async Task<APIResponse> SignIn(Login loginInfo)
+        //{
+        //    return await Accounts.SignIn(loginInfo);
+        //}
     }
 }

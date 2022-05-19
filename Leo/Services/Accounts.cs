@@ -50,7 +50,7 @@ namespace Leo.Services
                 App.LoggedUser = userInfo;
             }
 
-            return new APIResponse { Status = status };
+            return new APIResponse { Status = status, Error = error };
         }
 
         public static async Task<bool> GetToken()

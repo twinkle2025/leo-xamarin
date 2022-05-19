@@ -15,7 +15,7 @@
                      x:Name="SignInTab">
             <Label Text="UserName"
                        Margin="5, 0, 0, 0"/>
-            <Entry x:Name="Email_SignIn"
+            <Entry x:Name="Username_SignIn"
                        ClearButtonVisibility="WhileEditing"
                        IsTextPredictionEnabled="True"
                        TabIndex="0"/>

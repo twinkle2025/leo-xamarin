@@ -10,7 +10,7 @@ namespace Leo.Models.APITemplate
         [JsonProperty("status")]
         public int Status { get; set; }
         [JsonProperty("error")]
-        public int Error { get; set; }
+        public string Error { get; set; }
     }
 
     public class LoginSuccess
