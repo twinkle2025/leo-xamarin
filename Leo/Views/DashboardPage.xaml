@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Leo.Views.DashboardPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="StartAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="10,10,10,10">
+                    <Image Source="https://www.gravatar.com/avatar/ff31c87461bbdf4f9f0a1be05928853f"/>
+                    <Label Text="Leo Skater" 
+                       FontSize="20"/>
+                </StackLayout>
+                <Label Text="Active Subscriptions"
+                   Margin="20, 0, 10, 0"
+                   FontSize="30"/>
+                <StackLayout BackgroundColor="#eeeeee"
+                         Padding="0,0,0,0"
+                         Margin="30,0,30,0"
+                         Orientation="Horizontal">
+                    <StackLayout BackgroundColor="#2a6d90" 
+                             HeightRequest="120" WidthRequest="5">
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="StartAndExpand">
+                        <Label Text="You have no active subscriptions"
+                       FontSize="25"/>
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Click here to Add a New Subscription." 
+                                  TextColor="#3a81a6"
+                                  FontSize="20"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Rithmic Account"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       Margin="10,5,0,0"/>
+                    <StackLayout Orientation="Horizontal"
+                             Padding="10,5,5,5" 
+                             >
+                        <Label Text="User"
+                           FontSize="20"
+                           HorizontalOptions="End"/>
+                        <Entry x:Name="user"
+                           WidthRequest="200"
+                           HeightRequest="50"
+                           HorizontalOptions="End"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"
+                             Padding="10,5,5,5" 
+                             Grid.Row="1"
+                             Spacing="1"
+                             >
+                        <Label Text="Pass"
+                           FontSize="20"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                        <Entry x:Name="pass"
+                           WidthRequest="200"
+                           HeightRequest="50"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                        <CheckBox IsChecked="False"
+                              CheckedChanged="passchecked"
+                              HorizontalOptions="Center"
+                              VerticalOptions="Center"/>
+                        <Label Text="Show"
+                           FontSize="15"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="E-Mail Preferences"
+                   FontSize="30"
+                   Padding="10,5,0,0"/>
+                <Button Text="Subscribe to all e-mail messages"
+                    FontSize="20"
+                    Margin="20,20,20,20"
+                    BackgroundColor="#3a81a6"/>
+                <Image Source="https://apextraderfunding.com/member/application/default/themes/apex/public/img/apex.png" 
+                   HorizontalOptions="StartAndExpand"
+                   WidthRequest="100"
+                   HeightRequest="100"
+                   Margin="20,0,0,0"/>
+                <Label Text="Useful Links"
+                   FontSize="30"
+                   Margin="10,5,0,0"/>
+                <StackLayout Orientation="Horizontal"
+                             Padding="10,5,0,0"
+                             BackgroundColor="#eeeeee">
+                    <StackLayout BackgroundColor="#2a6d90" 
+                             HeightRequest="120" WidthRequest="5">
+
+                    </StackLayout>
+                    <StackLayout>
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Logout" 
+                                  FontSize="20"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <BoxView Color="Black" WidthRequest="100" HeightRequest="0.3" />
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Change Password/Edit Profile" 
+                                      FontSize="20"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <BoxView Color="Black" WidthRequest="100" HeightRequest="0.3" />
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Payment History" 
+                                  FontSize="20"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+        </ScrollView>        
+    </ContentPage.Content>
+</ContentPage>

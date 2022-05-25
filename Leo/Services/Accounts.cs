@@ -79,5 +79,17 @@ namespace Leo.Services
                 return true;
             }
         }
+
+        public static async Task SaveToken(string token)
+        {
+            try
+            {
+                await SecureStorage.SetAsync(AppConfig.UserTokenKey, token);
+            }
+            catch(Exception)
+            {
+            }
+
+        }
     }
 }

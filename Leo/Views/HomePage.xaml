@@ -4,9 +4,89 @@
              x:Class="Leo.Views.HomePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="Fill"
+                         VerticalOptions="StartAndExpand"
+                         Padding="5, 0, 5, 0">
+                <Label Text="In case of emergencies click on (Flatten Accounts) button to close everything"
+                       Margin="5, 10, 0, 0"
+                       FontSize="25"/>
+                <Label Text="Rithmic Login"
+                       FontSize="Default"
+                       Margin="10 ,10, 10, 10"/>
+                <Entry x:Name="account"
+                       IsEnabled="False"
+                       Text="APEX-0001"
+                       HorizontalOptions="StartAndExpand"
+                       WidthRequest="400"
+                       Background="lightgray"
+                       />
+                <Label Text="Note: All Accounts under (APEX-0001) will be flatten out including orders and open positions."
+                       FontSize="20"
+                       HorizontalOptions="CenterAndExpand"
+                       TextColor="#800000"/>
+                <Button Text="Flatten Accounts"
+                        BackgroundColor="#800000"
+                        TextColor="White"/>
+                <StackLayout Orientation="Horizontal"
+                             >
+                    <Label Text="Flatten Accounts"
+                           FontSize="30"
+                           FontAttributes="Bold"
+                           VerticalOptions="End"/>
+                    <Label Text="no"
+                           FontSize="15"
+                           VerticalOptions="End"/>
+                </StackLayout>
+                <Label Text="records"
+                       FontSize="20"/>
+                <Grid HorizontalOptions="Center" VerticalOptions="Start"  RowSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+                    <Label Grid.Column="0" Text="LOGIN" HorizontalOptions="Center" />
+                    <Label Grid.Column="1" Text="DATE" HorizontalOptions="Center" />
+                    <Label Grid.Column="2" Text="STATUS" HorizontalOptions="Center" />
+                </Grid>
+                <BoxView Color="Black" WidthRequest="100" HeightRequest="1" />
+                <ListView  HasUnevenRows="true" HeightRequest="200" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Grid Margin="0" Padding="0" RowSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0" Margin="0" Text="Binding data1" />
+                                        <Label Grid.Column="1" Margin="0" Text="Binding data2" />
+                                        <Label Grid.Column="2" Margin="0" Text="Binding data3" />
+                                    </Grid>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <!--<StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Fill"
+                         VerticalOptions="Start"
+                         Padding="0">
+                    <Label Text="User : "
+                        Margin="3, 3, 0, 0"/>
+                    <Entry IsTextPredictionEnabled="True"
+                        ClearButtonVisibility="WhileEditing"
+                        TabIndex="0"/>
+                </StackLayout>-->
+
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

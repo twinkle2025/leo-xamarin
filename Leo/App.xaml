@@ -13,7 +13,8 @@
         <Color x:Key="colorWhite">#FFFFFF</Color>
         <Color x:Key="colorWhiteF3">#F3F8FC</Color>
         <Color x:Key="colorBlack20">#202020</Color>
-        <Color x:Key="colorGreen">#009688</Color>
+        <Color x:Key="colorGreen" >#009688</Color>
+        <Color x:Key="colorblueRed" >#800000</Color>
 
         <Color x:Key="colorGreen_Button">#009688</Color>
         <Color x:Key="colorRed_Button">#f44336</Color>

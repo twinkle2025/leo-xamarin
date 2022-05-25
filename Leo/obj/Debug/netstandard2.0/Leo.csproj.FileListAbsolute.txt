@@ -19,3 +19,5 @@ C:\Users\GO.ON\source\repos\Leo\Leo\obj\Debug\netstandard2.0\Leo.dll
 C:\Users\GO.ON\source\repos\Leo\Leo\obj\Debug\netstandard2.0\ref\Leo.dll
 C:\Users\GO.ON\source\repos\Leo\Leo\obj\Debug\netstandard2.0\Leo.pdb
 C:\Users\GO.ON\source\repos\Leo\Leo\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
+C:\Users\GO.ON\source\repos\Leo\Leo\obj\Debug\netstandard2.0\Views\DashboardPage.xaml.g.cs
+C:\Users\GO.ON\source\repos\Leo\Leo\obj\Debug\netstandard2.0\Views\AccountSummary.xaml.g.cs

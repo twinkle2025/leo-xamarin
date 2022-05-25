@@ -40,6 +40,19 @@
                        FontAttributes="Bold"
                        Padding="15, 0, 0, 0"/>
             <Label Text="" FontSize="50"/>
+
+            <StackLayout HorizontalOptions="FillAndExpand" 
+                         VerticalOptions="CenterAndExpand"
+                         IsVisible="false"
+                         x:Name="LoadingPage">
+                <ActivityIndicator IsRunning="True"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Fill"/>
+                <Label Text="Please wait ... "
+                       VerticalOptions="FillAndExpand"
+                       HorizontalOptions="Center"/>
+            </StackLayout>
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>
